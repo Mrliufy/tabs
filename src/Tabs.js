@@ -168,7 +168,7 @@ Tabs.propTypes = {
   renderTabBar: PropTypes.func.isRequired,
   renderTabContent: PropTypes.func.isRequired,
   onChange: PropTypes.func,
-  children: PropTypes.any,
+  children: PropTypes.node,
   prefixCls: PropTypes.string,
   className: PropTypes.string,
   tabBarPosition: PropTypes.string,
@@ -182,6 +182,7 @@ Tabs.defaultProps = {
   destroyInactiveTabPane: false,
   onChange: noop,
   tabBarPosition: 'top',
+  children: null,
   style: {},
 };
 
